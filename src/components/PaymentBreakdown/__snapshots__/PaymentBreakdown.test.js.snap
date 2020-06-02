@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment breakdown renders date picker 1`] = `
+<p>
+  Schedule showing EMI payments starting from
+</p>
+`;

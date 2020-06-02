@@ -1,0 +1,126 @@
+.body {
+    margin: 50px 100px;
+    h2 {
+        text-align: center;
+    }
+    .part-one {
+        display: flex;
+        .slider-component {
+            .container {
+                padding: 32px;
+                .display {
+                    margin-bottom: 10px;
+                }
+            }
+            input[type=range] {
+                width: 500px;
+            }
+            input[type=text] {
+                padding: 10px;
+				border-radius: 3px;
+				border: 1px solid #b7b4b4;
+				font-size: 15px;
+            }
+            .symbol {
+                display: inline;
+                button {
+                    border: none;
+					background: transparent;
+					font-size: 15px;
+                    height: 100%;
+                    padding: 10px;
+                    border: 1px solid #c3c3c3;
+                    background: #e9ecef;
+                    &:focus {
+                        border: 1px solid grey;
+                    }
+                }
+                button:focus{
+                    outline: none;
+                }
+                #Yr, #Mon {
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #c3c3c3;
+                    }
+                }
+                .selectedUnit {
+                    background-color: #c3c3c3;
+                    border: 1px solid grey;
+                }
+            }
+            .marker {
+                width: 500px;
+                margin: 5px;
+                display: flex;
+                position: relative;
+                div {
+                    position: absolute;
+                }
+            }
+        }
+        .summary {
+            padding: 2%;
+            margin: auto;
+            display: flex;
+            border: 1px dotted #8b8c8e;
+            justify-content: space-around;
+            .data {
+                display: flex;
+                flex-direction: column;
+                .label {
+                    font-weight: bold;
+                }
+            }
+            #chart {
+                .highcharts-credits {
+                    display: none;
+                }
+            }
+        }
+    }
+    .part-two {
+        .date {
+            display: flex;
+            margin: 5%;
+            justify-content: center;
+            p {
+                margin: 5px 15px;
+            }
+        }
+        table, td, th {  
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+    
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+            th, td {
+                padding: 15px;
+            }
+            tr {
+                table-layout: fixed;
+            }
+            .expand-collapse {
+                cursor: pointer;
+                &:hover{
+                    background-color: aliceblue;
+                }
+            }
+            .selectedRow {
+                background-color: #b3b6b9;
+            }
+            .hide {
+                display: none;
+            }
+            .show {
+                background-color: #d0d0d0;
+                display: table-row;
+            }
+        }	
+    }
+}
+
+
