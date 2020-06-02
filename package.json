@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --collectCoverage true",
+    "test": "react-scripts test --coverage --collectCoverage true run-p",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

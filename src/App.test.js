@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent,render } from '@testing-library/react';
 import App from './App';
-import {calculateEMI } from './utils/helper'
+import {calculateEMI } from '../src/utils/helper'
 
 describe('App', () => {
 	it('should render App', () => {
